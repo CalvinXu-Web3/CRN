@@ -191,6 +191,7 @@ window.CRN_I18N = (() => {
       "network.openTronExplorer": "在 TRONSCAN 中查看 1#",
       "network.openTronExplorerAdditional": "在 TRONSCAN 中查看 1#（补充地址）",
       "network.openOkxExplorer": "在 TRONSCAN 中查看 OKX 参考地址",
+      "network.openOkxExplorerAdditional": "在 TRONSCAN 中查看 OKX 参考地址（补充地址）",
       "network.openBinanceExplorer": "在 TRONSCAN 中查看 Binance 参考地址",
       "network.openBinanceExplorerSecondary": "在 TRONSCAN 中查看 Binance 参考地址（第二入口）",
       "chart.investorFunds": "投资者资金",
@@ -286,6 +287,7 @@ window.CRN_I18N = (() => {
     "hero.okx": "OKX",
     "hero.destination": "Binance",
     "network.openOkxExplorer": "VIEW OKX REFERENCE ON TRONSCAN",
+    "network.openOkxExplorerAdditional": "VIEW ADDITIONAL OKX REFERENCE ON TRONSCAN",
     "network.openTronExplorerAdditional": "VIEW ADDITIONAL 1# REFERENCE ON TRONSCAN",
     "network.openBinanceExplorer": "VIEW BINANCE REFERENCE ON TRONSCAN",
     "network.openBinanceExplorerSecondary": "VIEW BINANCE REFERENCE ON TRONSCAN (SECOND LINK)"

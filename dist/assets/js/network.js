@@ -4,7 +4,10 @@ window.CRNNetwork = (() => {
   const find = id => window.networkData.find(node => node.id === id);
   const explorerLinks = Object.freeze({
     "pending-a": [{ url: "https://etherscan.io/address/0x7a53155f6dfcedc0061eb7247abb4250d691478f", labelKey: "network.openExplorer", labelFallback: "VIEW 4# ON ETHERSCAN" }],
-    "pending-b": [{ url: "https://tronscan.org/address/TSCMwyQu9y27zG95deB2nDRkNNuZzkDTnY/transfers", labelKey: "network.openOkxExplorer", labelFallback: "VIEW OKX REFERENCE ON TRONSCAN" }],
+    "pending-b": [
+      { url: "https://tronscan.org/address/TSCMwyQu9y27zG95deB2nDRkNNuZzkDTnY/transfers", labelKey: "network.openOkxExplorer", labelFallback: "VIEW OKX REFERENCE ON TRONSCAN" },
+      { url: "https://tronscan.org/address/TGMJSBKMuEVn8JnbpdFY2QQaB6vxyt1cfV/transfers", labelKey: "network.openOkxExplorerAdditional", labelFallback: "VIEW ADDITIONAL OKX REFERENCE ON TRONSCAN" }
+    ],
     "pending-c": [
       { url: "https://tronscan.org/address/TXGP8JAxGLdMpzSSodUEpHBCWT8yrVUJXn/transfers", labelKey: "network.openTronExplorer", labelFallback: "VIEW 1# ON TRONSCAN" },
       { url: "https://tronscan.org/address/TQNesJ8N4bYiRRVHD2wJavPgw8oCWgcBx7/transfers", labelKey: "network.openTronExplorerAdditional", labelFallback: "VIEW ADDITIONAL 1# REFERENCE ON TRONSCAN" }
