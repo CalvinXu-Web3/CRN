@@ -33,5 +33,9 @@ CHN护照号码：
 
 Telegram:@Calvin13555
 WhatsApp:+65 85909777
+E-mail(邮箱)：
+xu85909777@gmail.com、
+xu.zhenliang@hycapital.global
+85396793@qq.com
 
 在线爆料（Submit a Tip Online）：https://crn-eight.vercel.app/
