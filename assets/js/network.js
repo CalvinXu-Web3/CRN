@@ -9,7 +9,10 @@ window.CRNNetwork = (() => {
       { url: "https://tronscan.org/address/TXGP8JAxGLdMpzSSodUEpHBCWT8yrVUJXn/transfers", labelKey: "network.openTronExplorer", labelFallback: "VIEW 1# ON TRONSCAN" },
       { url: "https://tronscan.org/address/TQNesJ8N4bYiRRVHD2wJavPgw8oCWgcBx7/transfers", labelKey: "network.openTronExplorerAdditional", labelFallback: "VIEW ADDITIONAL 1# REFERENCE ON TRONSCAN" }
     ],
-    "pending-d": [{ url: "https://tronscan.org/address/TCLNmgHvZcm3kFy3gCKwDVD54z1aK5aCJc/transfers", labelKey: "network.openBinanceExplorer", labelFallback: "VIEW BINANCE REFERENCE ON TRONSCAN" }]
+    "pending-d": [
+      { url: "https://tronscan.org/address/TCLNmgHvZcm3kFy3gCKwDVD54z1aK5aCJc/transfers", labelKey: "network.openBinanceExplorer", labelFallback: "VIEW BINANCE REFERENCE ON TRONSCAN" },
+      { url: "https://tronscan.org/address/TCLNmgHvZcm3kFy3gCKwDVD54z1aK5aCJc/transfers", labelKey: "network.openBinanceExplorerSecondary", labelFallback: "VIEW BINANCE REFERENCE ON TRONSCAN (SECOND LINK)" }
+    ]
   });
   const svgNS = "http://www.w3.org/2000/svg";
   const element = (tag, attrs = {}) => { const node = document.createElementNS(svgNS, tag); Object.entries(attrs).forEach(([key, value]) => node.setAttribute(key, value)); return node; };
