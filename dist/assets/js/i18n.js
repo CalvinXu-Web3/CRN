@@ -40,7 +40,7 @@ window.CRN_I18N = (() => {
       "case.description": "公开信息仅限可供审阅的内容；未经核验的记录会被明确标注。",
       "timeline.index": "02 / 时间线",
       "timeline.title": "案件时间线",
-      "timeline.description": "打开条目查看其公开状态与来源可用性。",
+      "timeline.description": "以下为脱敏的报送时间线；所有条目均待独立核验，打开条目查看状态与来源。",
       "network.index": "03 / 关系网络",
       "network.title": "人物 / 实体网络",
       "network.description": "此视图仅可展示公开、必要且经过审阅的关系。",
@@ -282,15 +282,26 @@ window.CRN_I18N = (() => {
   });
   Object.assign(dictionaries.en, { "value.active": "ACTIVE", "value.tracking": "TRACKING", "value.collecting": "COLLECTING", "value.inProgress": "IN PROGRESS", "value.jurisdictionsPending": "DATA PENDING / Multiple", "value.underReview": "UNDER REVIEW", "value.publicSourcePending": "PUBLIC SOURCE PENDING", "value.estimatedSourcePending": "ESTIMATED · PUBLIC SOURCE PENDING", "value.noVerifiedCount": "NO VERIFIED COUNT PUBLISHED", "value.noVerifiedAddresses": "NO VERIFIED ADDRESSES PUBLISHED", "value.noVerifiedTxids": "NO VERIFIED TXIDS PUBLISHED", "value.controlledReview": "UNDER CONTROLLED REVIEW", "value.publicIntake": "CRN PUBLIC INTAKE", "value.case": "CASE", "value.entity": "ENTITY", "value.wallet": "WALLET", "value.transaction": "TRANSACTION", "value.exchange": "EXCHANGE", "value.caseFile": "CRN CASE FILE", "value.publicEntityData": "PUBLIC ENTITY DATA", "value.walletData": "WALLET DATA", "value.transactionData": "TRANSACTION DATA", "value.destinationData": "DESTINATION DATA", "value.centralCase": "CENTRAL CASE RECORD" });
   Object.assign(dictionaries["zh-CN"], {
-    "timeline.TL-PENDING-01.title": "案件时间线等待来源核验", "timeline.TL-PENDING-01.summary": "在识别并审阅公开来源前，不会发布带日期的事件。",
-    "timeline.TL-PENDING-02.title": "证据收集入口已开放", "timeline.TL-PENDING-02.summary": "受影响的投资者和信息持有者可准备材料，以供受控审阅。",
-    "timeline.TL-PENDING-03.title": "链上审阅等待已发布记录", "timeline.TL-PENDING-03.summary": "在独立核验前，钱包、交易和资金流信息将保持不可用。",
+    "timeline.TL-JUN-27.title": "相关行程记录（据报）", "timeline.TL-JUN-27.summary": "材料称，相关人员于当日发生与后续案件事件有关的境外行程；不含姓名、航班或地点。",
+    "timeline.TL-JUL-01.title": "相关人员失联报告", "timeline.TL-JUL-01.summary": "材料称，相关人员自当日开始失去联系；尚待独立核验。",
+    "timeline.TL-JUL-02-03.title": "境外会面线索（据报）", "timeline.TL-JUL-02-03.summary": "材料提出可能存在相关人员之间的境外会面；尚未独立证实。",
+    "timeline.TL-JUL-03.title": "拘押信息被转发（据报）", "timeline.TL-JUL-03.summary": "材料称，关于相关人员遭拘押的信息及地点被转发；该说法尚未得到独立证实。",
+    "timeline.TL-JUL-03-VERIFY.title": "后续核验程序启动（据报）", "timeline.TL-JUL-03-VERIFY.summary": "材料称，相关方启动法律咨询与现场核验；公开结论仍待来源文件支持。",
+    "timeline.TL-JUL-12.title": "消息记录已留存", "timeline.TL-JUL-12.summary": "材料保存了一则与案件争议有关的消息；原始内容仅限受控审阅。",
+    "timeline.TL-JUL-15.title": "补充消息记录已留存", "timeline.TL-JUL-15.summary": "材料保存了后续消息与截图；原始内容仅限受控审阅。",
+    "timeline.TL-JUL-22.title": "最后一次消息活动（据报）", "timeline.TL-JUL-22.summary": "材料称，相关人员在当日出现最后一次可见消息活动；原文及身份信息不在公开页展示。",
     "form.projectDocs": "项目文件", "form.corporateRecords": "公司记录"
   });
   Object.assign(dictionaries.en, {
-    "timeline.TL-PENDING-01.title": "Case chronology awaiting source validation", "timeline.TL-PENDING-01.summary": "No dated event is published until a public source can be identified and reviewed.",
-    "timeline.TL-PENDING-02.title": "Evidence intake is available", "timeline.TL-PENDING-02.summary": "Affected investors and information holders may prepare materials for controlled review.",
-    "timeline.TL-PENDING-03.title": "On-chain review pending published records", "timeline.TL-PENDING-03.summary": "Wallet, transaction and flow information will remain unavailable until independently verified.",
+    "timeline.description": "This is a redacted reported chronology. Every entry remains pending independent verification; open an entry to see its status and source.",
+    "timeline.TL-JUN-27.title": "Reported related travel", "timeline.TL-JUN-27.summary": "Submitted materials describe related overseas travel connected to later case events. Names, flight details and locations are withheld.",
+    "timeline.TL-JUL-01.title": "Reported loss of contact", "timeline.TL-JUL-01.summary": "Submitted materials report that contact with a related individual ceased on this date. Independent verification remains pending.",
+    "timeline.TL-JUL-02-03.title": "Reported overseas-meeting lead", "timeline.TL-JUL-02-03.summary": "Submitted materials raise a possible overseas meeting between related individuals. It has not been independently confirmed.",
+    "timeline.TL-JUL-03.title": "Reported detention claim circulated", "timeline.TL-JUL-03.summary": "Submitted materials report that a detention claim and a location were circulated. The claim has not been independently confirmed.",
+    "timeline.TL-JUL-03-VERIFY.title": "Reported follow-up verification", "timeline.TL-JUL-03-VERIFY.summary": "Submitted materials describe legal consultation and on-site checking after the claim circulated. Public conclusions remain pending source documentation.",
+    "timeline.TL-JUL-12.title": "Message record retained", "timeline.TL-JUL-12.summary": "Submitted materials retain a message associated with the case dispute. Original content remains under controlled review.",
+    "timeline.TL-JUL-15.title": "Additional message record retained", "timeline.TL-JUL-15.summary": "Submitted materials retain later messages and screenshots. Original content remains under controlled review.",
+    "timeline.TL-JUL-22.title": "Latest reported message activity", "timeline.TL-JUL-22.summary": "Submitted materials report the latest visible message activity on this date. The original wording and identity details are withheld.",
     "form.projectDocs": "PROJECT DOCUMENTS", "form.corporateRecords": "CORPORATE RECORDS"
   });
 
