@@ -4,7 +4,9 @@ window.CRNNetwork = (() => {
   const find = id => window.networkData.find(node => node.id === id);
   const explorerLinks = Object.freeze({
     "pending-a": { url: "https://etherscan.io/address/0x7a53155f6dfcedc0061eb7247abb4250d691478f", labelKey: "network.openExplorer", labelFallback: "VIEW 4# ON ETHERSCAN" },
-    "pending-c": { url: "https://tronscan.org/address/TSCMwyQu9y27zG95deB2nDRkNNuZzkDTnY/transfers", labelKey: "network.openTronExplorer", labelFallback: "VIEW 1# ON TRONSCAN" }
+    "pending-b": { url: "https://tronscan.org/address/TSCMwyQu9y27zG95deB2nDRkNNuZzkDTnY/transfers", labelKey: "network.openOkxExplorer", labelFallback: "VIEW OKX REFERENCE ON TRONSCAN" },
+    "pending-c": { url: "https://tronscan.org/address/TXGP8JAxGLdMpzSSodUEpHBCWT8yrVUJXn/transfers", labelKey: "network.openTronExplorer", labelFallback: "VIEW 1# ON TRONSCAN" },
+    "pending-d": { url: "https://tronscan.org/address/TCLNmgHvZcm3kFy3gCKwDVD54z1aK5aCJc/transfers", labelKey: "network.openBinanceExplorer", labelFallback: "VIEW BINANCE REFERENCE ON TRONSCAN" }
   });
   const svgNS = "http://www.w3.org/2000/svg";
   const element = (tag, attrs = {}) => { const node = document.createElementNS(svgNS, tag); Object.entries(attrs).forEach(([key, value]) => node.setAttribute(key, value)); return node; };

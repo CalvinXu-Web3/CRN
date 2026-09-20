@@ -24,13 +24,14 @@ window.CRN_I18N = (() => {
       "hero.description": "面向案件材料、可核验链上证据与投资者信息提交的公开网络。",
       "hero.explore": "查看案件",
       "hero.schematic": "链上关系示意",
-      "hero.schematicAria": "示意性链上关系图；4# 和 1# 为外部区块浏览器链接，不代表钱包归属认定。",
+      "hero.schematicAria": "示意性链上关系图；4#、1# 以及来源标注的交易所参考链接均不代表钱包归属或平台关联认定。",
       "hero.networkTitle": "链上关系示意图",
-      "hero.networkDesc": "仅为示意图；4# 与 1# 链接由提交材料提供，不代表钱包归属认定。公开链上数据仍待核验。",
+      "hero.networkDesc": "仅为示意图；4#、1# 及交易所参考链接由提交材料提供，不代表钱包归属或平台关联认定。公开链上数据仍待核验。",
       "hero.estimated": "估算",
       "hero.wallet": "4#",
+      "hero.okx": "OKX",
       "hero.flow": "1#",
-      "hero.destination": "去向",
+      "hero.destination": "Binance",
       "hero.noRecords": "来源标注的区块浏览器链接 · 等待核验",
       "hero.dataPending": "数据待补充",
       "hero.statusAria": "案件状态概览",
@@ -188,6 +189,8 @@ window.CRN_I18N = (() => {
       "network.openProfile": "打开 {name} 的公开档案",
       "network.openExplorer": "在 Etherscan 中查看 4#",
       "network.openTronExplorer": "在 TRONSCAN 中查看 1#",
+      "network.openOkxExplorer": "在 TRONSCAN 中查看 OKX 参考地址",
+      "network.openBinanceExplorer": "在 TRONSCAN 中查看 Binance 参考地址",
       "chart.investorFunds": "投资者资金",
       "chart.wallet": "钱包",
       "chart.aggregation": "归集",
@@ -275,6 +278,14 @@ window.CRN_I18N = (() => {
     "share.qrUnavailable": "QR preview is unavailable; the case link can still be copied.", "share.copied": "Case link copied to clipboard.", "share.copyFailed": "Unable to copy the link. Select it and copy manually.", "share.openFailed": "This share option could not be opened. Copy the case link instead.", "share.wechat": "In WeChat, tap the ⋯ menu to share with friends or Moments.", "share.nativeUnavailable": "Native sharing is not available here. Choose a platform or copy the link.", "share.nativeFailed": "Native sharing was unavailable. Choose another share option.", "share.generateFirst": "Generate a share card first.", "share.imageUnsupported": "Image sharing is not supported here. Download the card instead.", "share.imageFailed": "The image could not be shared. Download it instead.", "card.unavailable": "Share card generation is unavailable in this browser.", "card.generated": "Share card generated locally.", "card.failed": "Unable to generate the share card. Try again.", "card.downloadFailed": "The card could not be downloaded.", "card.network": "CASE & RECOVERY NETWORK", "card.estimate": "ESTIMATED FIGURE · PUBLIC SOURCE PENDING", "card.recovery1": "INVESTOR", "card.recovery2": "RECOVERY CASE", "card.investigation": "ON-CHAIN INVESTIGATION", "card.tags": "EVIDENCE  /  TRANSPARENCY  /  RECOVERY", "card.qr": "QR IN SHARE CENTER", "search.public": "PUBLIC RECORD SEARCH", "search.title": "SEARCH", "search.copy": "Search case ID, public entity name, evidence ID, wallet address or TxID. No private information is indexed.", "search.placeholder": "CASE ID, WALLET, TXID, EVIDENCE ID", "search.enter": "Enter a search term.", "search.noResults": "NO PUBLIC RECORD FOUND", "search.noResultsCopy": "Only reviewed public records are available in this demo.", "search.caseFile": "CRN Case File", "search.caseOverview": "Public case overview", "search.caseDrawer": "The public case overview is available on this page.", "recovery.reportImpact": "REPORT AN IMPACT", "recovery.localSaved": "Local draft saved on this device session only. No information was sent.", "bounty.coreContinues": "CORE CONTINUES", "bounty.coreCopy": "Share, referral attribution, QR, evidence intake and case browsing remain available with no wallet connection.", "bounty.view": "VIEW BOUNTY STATUS", "bounty.claimDisabled": "Claim is disabled: no active campaign or on-chain contract is configured.", "bounty.claimRequires": "A real claim requires a verifier attestation and contract validation.", "wallet.connected": "Wallet connected: {account}", "wallet.unavailable": "Wallet connection is unavailable. A wallet is only needed for a real on-chain claim.", "error.initialization": "Some interface elements could not initialize. Core content remains available.", "boot.loading": "LOADING CASE FILE…", "boot.amount": "50,000,000 USDT · ESTIMATED"
   };
   dictionaries.en = english;
+  Object.assign(dictionaries.en, {
+    "hero.schematicAria": "Illustrative on-chain network schematic; 4#, 1#, and source-labelled exchange references do not establish wallet ownership or platform association.",
+    "hero.networkDesc": "An illustrative network only. The 4#, 1#, and exchange-reference links were supplied in submitted materials and do not establish wallet ownership or platform association. Public chain data is pending verification.",
+    "hero.okx": "OKX",
+    "hero.destination": "Binance",
+    "network.openOkxExplorer": "VIEW OKX REFERENCE ON TRONSCAN",
+    "network.openBinanceExplorer": "VIEW BINANCE REFERENCE ON TRONSCAN"
+  });
 
   const valueKeys = {
     "ESTIMATED FIGURE · PUBLIC SOURCE PENDING": "hero.estimate", "ACTIVE": "value.active", "TRACKING": "value.tracking", "COLLECTING": "value.collecting", "IN PROGRESS": "value.inProgress", "DATA PENDING": "hero.dataPending", "DATA PENDING / Multiple": "value.jurisdictionsPending", "UNDER REVIEW": "value.underReview", "PUBLIC SOURCE PENDING": "value.publicSourcePending", "ESTIMATED · PUBLIC SOURCE PENDING": "value.estimatedSourcePending", "NO VERIFIED COUNT PUBLISHED": "value.noVerifiedCount", "NO VERIFIED ADDRESSES PUBLISHED": "value.noVerifiedAddresses", "NO VERIFIED TXIDS PUBLISHED": "value.noVerifiedTxids", "UNDER CONTROLLED REVIEW": "value.controlledReview", "CRN PUBLIC INTAKE": "value.publicIntake", "CASE": "value.case", "ENTITY": "value.entity", "WALLET": "value.wallet", "TRANSACTION": "value.transaction", "EXCHANGE": "value.exchange", "CRN CASE FILE": "value.caseFile", "PUBLIC ENTITY DATA": "value.publicEntityData", "WALLET DATA": "value.walletData", "TRANSACTION DATA": "value.transactionData", "DESTINATION DATA": "value.destinationData", "CENTRAL CASE RECORD": "value.centralCase", "NOT PUBLISHED": "chart.notPublished", "ESTIMATED FUNDS": "metric.estimatedFunds", "AFFECTED INVESTORS": "metric.affected", "WALLETS TRACKED": "metric.wallets", "TRANSACTIONS": "metric.transactions", "EVIDENCE ITEMS": "metric.evidence", "JURISDICTIONS": "metric.jurisdictions"
