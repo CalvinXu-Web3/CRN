@@ -56,6 +56,7 @@ window.CRNNetwork = (() => {
     });
     mount.replaceChildren(svg);
     document.querySelectorAll(".hero-node").forEach(node => {
+      if (node.dataset.explorerLink !== undefined) return;
       if (node.dataset.networkBound) return;
       node.dataset.networkBound = "true";
       node.addEventListener("click", () => showNode(node.dataset.node));

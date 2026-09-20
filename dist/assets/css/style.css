@@ -97,6 +97,7 @@ html[lang="zh-CN"] .section-index, html[lang="zh-CN"] .eyebrow, html[lang="zh-CN
 .hero-network-lines .pulse-path { stroke: var(--gold); stroke-width: 1.5; stroke-dasharray: 2 12; animation: path-dash 3.5s linear infinite; }
 @keyframes path-dash { to { stroke-dashoffset: -70; } }
 .hero-node { cursor: pointer; outline: none; }
+.hero-node-link { outline: none; }
 .hero-node circle { fill: rgba(8,13,20,.92); stroke: var(--gold); stroke-width: 1; transition: fill .2s, stroke-width .2s; }
 .hero-node .outer { fill: none; stroke: rgba(245,199,106,.16); stroke-dasharray: 3 6; animation: orbit 18s linear infinite; transform-origin: 303px 264px; }
 .hero-node .middle { fill: rgba(245,199,106,.05); stroke: rgba(245,199,106,.33); }
@@ -104,7 +105,7 @@ html[lang="zh-CN"] .section-index, html[lang="zh-CN"] .eyebrow, html[lang="zh-CN
 .hero-node.blue circle { stroke: var(--blue); }
 .hero-node text { fill: var(--muted); font-family: var(--mono); font-size: 10px; letter-spacing: .07em; text-anchor: middle; }
 .hero-node .big { fill: var(--gold); font-family: var(--sans); font-size: 19px; font-weight: 700; letter-spacing: -.03em; }
-.hero-node:hover circle, .hero-node:focus-visible circle { fill: rgba(245,199,106,.15); stroke-width: 2; }
+.hero-node:hover circle, .hero-node:focus-visible circle, .hero-node-link:focus-visible .hero-node circle { fill: rgba(245,199,106,.15); stroke-width: 2; }
 @keyframes orbit { to { transform: rotate(360deg); } }
 .network-caption { position: relative; display: flex; justify-content: space-between; margin: -6px 5px 0; color: var(--dim); font-family: var(--mono); font-size: .57rem; letter-spacing: .07em; }
 .hero-status { position: absolute; right: max(24px, calc((100vw - 1280px) / 2)); bottom: 52px; left: max(24px, calc((100vw - 1280px) / 2)); display: grid; grid-template-columns: repeat(4, 1fr); border-top: 1px solid var(--border); border-left: 1px solid var(--border); }
