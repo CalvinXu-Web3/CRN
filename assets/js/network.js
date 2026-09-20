@@ -27,6 +27,11 @@ window.CRNNetwork = (() => {
     if (!mount) return;
     const svg = element("svg", { viewBox: "0 0 1000 440", role: "img", "aria-label": t("network.graphAria", "Public relationship graph. All non-case nodes are data pending.") });
     const positions = { case: [500, 220, 75], "pending-a": [186, 98, 46], "pending-b": [194, 343, 46], "pending-c": [818, 99, 46], "pending-d": [810, 342, 46] };
+    const defs = element("defs");
+    const casePhotoClip = element("clipPath", { id: "case-node-photo-clip" });
+    casePhotoClip.appendChild(element("circle", { cx: 500, cy: 220, r: 75 }));
+    defs.appendChild(casePhotoClip);
+    svg.appendChild(defs);
     const edges = [["case", "pending-a"], ["case", "pending-b"], ["case", "pending-c"], ["case", "pending-d"], ["pending-a", "pending-c"], ["pending-b", "pending-d"]];
     edges.forEach(([from, to]) => {
       const [x1, y1] = positions[from]; const [x2, y2] = positions[to];
@@ -35,7 +40,12 @@ window.CRNNetwork = (() => {
     window.networkData.forEach(node => {
       const [x, y, radius] = positions[node.id];
       const group = element("g", { class: `entity-node ${node.id === "case" ? "case" : ""}`, tabindex: "0", role: "button", "aria-label": t("network.openProfile", `Open ${node.name} public profile`, { name: value(node.name) }) });
-      group.appendChild(element("circle", { cx: x, cy: y, r: radius }));
+      if (node.id === "case") {
+        group.append(
+          element("image", { href: "assets/images/00.jpeg", x: x - radius, y: y - radius, width: radius * 2, height: radius * 2, preserveAspectRatio: "xMidYMid slice", "clip-path": "url(#case-node-photo-clip)", class: "case-node-photo", "aria-hidden": "true" }),
+          element("circle", { cx: x, cy: y, r: radius, class: "case-photo-overlay" })
+        );
+      } else group.appendChild(element("circle", { cx: x, cy: y, r: radius }));
       if (node.id === "case") { const outer = element("circle", { cx: x, cy: y, r: 98, fill: "none", stroke: "rgba(245,199,106,.18)", "stroke-dasharray": "4 8" }); svg.appendChild(outer); }
       const first = element("text", { x, y: y - 3 }); first.textContent = node.id === "case" ? t("hero.file", "CASE FILE") : t("network.pending", "DATA");
       const second = element("text", { x, y: y + 14 }); second.textContent = node.id === "case" ? window.caseData.id : t("hero.dataPending", "PENDING");

@@ -159,7 +159,7 @@ html[lang="zh-CN"] .section-index, html[lang="zh-CN"] .eyebrow, html[lang="zh-CN
 .entity-network { min-height: 440px; border-top: 1px solid var(--border); background: radial-gradient(ellipse at 50% 52%, rgba(77,163,255,.05), transparent 50%); }
 .entity-network svg { width: 100%; height: 440px; }
 .network-edge { stroke: rgba(135,147,163,.3); stroke-width: 1; stroke-dasharray: 5 6; }
-.entity-node { cursor: pointer; outline: none; }.entity-node circle { fill: #0c131d; stroke: var(--blue); stroke-width: 1.2; transition: .2s; }.entity-node.case circle { fill: #211b10; stroke: var(--gold); }.entity-node:hover circle, .entity-node:focus-visible circle { stroke-width: 2.5; filter: drop-shadow(0 0 8px rgba(77,163,255,.5)); }.entity-node text { fill: var(--muted); font-family: var(--mono); font-size: 10px; letter-spacing: .05em; text-anchor: middle; }.entity-node.case text { fill: var(--gold); }
+.entity-node { cursor: pointer; outline: none; }.entity-node circle { fill: #0c131d; stroke: var(--blue); stroke-width: 1.2; transition: .2s; }.entity-node.case circle { fill: #211b10; stroke: var(--gold); }.entity-node.case .case-node-photo { pointer-events: none; }.entity-node.case .case-photo-overlay { fill: rgba(8,13,20,.34); stroke: var(--gold); }.entity-node:hover circle, .entity-node:focus-visible circle { stroke-width: 2.5; filter: drop-shadow(0 0 8px rgba(77,163,255,.5)); }.entity-node text { fill: var(--muted); font-family: var(--mono); font-size: 10px; letter-spacing: .05em; text-anchor: middle; }.entity-node.case text { fill: var(--gold); }
 
 .onchain-section { background: linear-gradient(180deg, transparent, rgba(77,163,255,.025), transparent); }
 .flow-panel { padding: 22px; }
