@@ -2,12 +2,14 @@ window.CRNNetwork = (() => {
   const t = (key, fallback, params) => window.CRN_I18N?.t(key, fallback, params) ?? fallback;
   const value = raw => window.CRN_I18N?.value(raw) ?? raw;
   const find = id => window.networkData.find(node => node.id === id);
+  const walletExplorerUrl = "https://etherscan.io/address/0x7a53155f6dfcedc0061eb7247abb4250d691478f";
   const svgNS = "http://www.w3.org/2000/svg";
   const element = (tag, attrs = {}) => { const node = document.createElementNS(svgNS, tag); Object.entries(attrs).forEach(([key, value]) => node.setAttribute(key, value)); return node; };
 
   function showNode(id) {
     const item = find(id);
     if (!item) return;
+    const explorerLink = id === "pending-a" ? `<a class="button button-ghost small drawer-explorer-link" href="${walletExplorerUrl}" target="_blank" rel="noopener noreferrer"><span>${t("network.openExplorer", "VIEW 4# ON ETHERSCAN")}</span><i aria-hidden="true">↗</i></a>` : "";
     window.CRNDrawer?.open(`
       <span class="drawer-type">${value(item.type)}</span>
       <h2>${value(item.name)}</h2>
@@ -19,7 +21,7 @@ window.CRNNetwork = (() => {
         <div><span>${t("network.relationship", "RELATIONSHIP")}</span><strong>${value(item.relationship)}</strong></div>
         <div><span>${t("network.evidenceCount", "EVIDENCE COUNT")}</span><strong>${value(item.evidenceCount)}</strong></div>
         <div><span>${t("timeline.updatedAt", "UPDATED AT")}</span><strong>${item.updatedAt}</strong></div>
-      </div>`);
+      </div>${explorerLink}`);
   }
 
   function render() {
@@ -56,7 +58,6 @@ window.CRNNetwork = (() => {
     });
     mount.replaceChildren(svg);
     document.querySelectorAll(".hero-node").forEach(node => {
-      if (node.dataset.explorerLink !== undefined) return;
       if (node.dataset.networkBound) return;
       node.dataset.networkBound = "true";
       node.addEventListener("click", () => showNode(node.dataset.node));
