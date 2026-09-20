@@ -34,4 +34,4 @@ CHN护照号码：
 Telegram:@Calvin13555
 WhatsApp:+65 85909777
 
-持续爆料！！！
+在线爆料（Submit a Tip Online）：https://crn-eight.vercel.app/
