@@ -189,6 +189,7 @@ window.CRN_I18N = (() => {
       "network.openProfile": "打开 {name} 的公开档案",
       "network.openExplorer": "在 Etherscan 中查看 4#",
       "network.openTronExplorer": "在 TRONSCAN 中查看 1#",
+      "network.openTronExplorerAdditional": "在 TRONSCAN 中查看 1#（补充地址）",
       "network.openOkxExplorer": "在 TRONSCAN 中查看 OKX 参考地址",
       "network.openBinanceExplorer": "在 TRONSCAN 中查看 Binance 参考地址",
       "chart.investorFunds": "投资者资金",
@@ -284,6 +285,7 @@ window.CRN_I18N = (() => {
     "hero.okx": "OKX",
     "hero.destination": "Binance",
     "network.openOkxExplorer": "VIEW OKX REFERENCE ON TRONSCAN",
+    "network.openTronExplorerAdditional": "VIEW ADDITIONAL 1# REFERENCE ON TRONSCAN",
     "network.openBinanceExplorer": "VIEW BINANCE REFERENCE ON TRONSCAN"
   });
 

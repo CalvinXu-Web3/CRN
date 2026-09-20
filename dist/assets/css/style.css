@@ -209,4 +209,5 @@ html[lang="zh-CN"] .section-index, html[lang="zh-CN"] .eyebrow, html[lang="zh-CN
 .search-result strong { font-size:.78rem; font-weight:500; }
 .search-result small { color:var(--muted); font-family:var(--mono); font-size:.6rem; }
 @media (max-width: 600px) { .bounty-roles { grid-template-columns:1fr; }.bounty-roles section { border-right:0; } }
-.drawer-explorer-link { margin-top: 18px; }
+.drawer-explorer-links { display: grid; gap: 10px; margin-top: 18px; }
+.drawer-explorer-link { width: 100%; }
