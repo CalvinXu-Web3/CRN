@@ -1,10 +1,37 @@
 # CRN — Case & Recovery Network
+主犯：
+姓名：徐振良（Calvin）
+身份证号：232301198003111114  
+CHN护照号码：
+1.现在使用：EQ2363812
+2.2025年8月前使用：EF7708993
+3.往来港澳通行证：C70021051
+4.新加坡EP FIN：M4430370U
 
-First-phase static H5 for Web3 investigation, on-chain evidence and investor recovery.
+共犯1：
+姓名：黄长枝       
+身份：情人
+身份证号：340825198005150223  
+CHN护照号码：
+1.现在使用：EQ9881383
+2.2025年11月前使用：EH4964581\G39971983
+3.往来港澳通行证：CD6119118、W36528594
+现状：
+2026年8月20日出乘CZ8047出逃，目的地（新加坡）
 
-- Open `index.html` directly for the local interface. A local HTTP server is recommended for clipboard, generated QR previews and native-share support.
-- Replace only the clearly labeled demo/pending fields in `assets/js/data.js` after source review.
-- The app starts in `CORE` mode: sharing remains on, while bounty, wallet claims, verification and production uploads remain off.
-- The interface defaults to Simplified Chinese and includes a persistent `中文 / EN` switch. Presentation text lives in `assets/js/i18n.js`; case records in `assets/js/data.js` remain source-labelled rather than translated as new facts.
-- The phase-two contract reference is in `contracts/BountyPool.sol`; do not deploy it or fund it without tests and an independent security audit.
-1111111
+共犯2：
+姓名：徐润博       
+身份：儿子
+身份证号：440303200712034510
+CHN护照号码：
+1.现在使用：EX5803869
+2.2025年11月前使用：E25333925
+3.往来港澳通行证：W91428189
+4.大陆居民往来台湾通行证：T17797103
+现状：
+2026年8月2日出乘EK303出逃，目的地（迪拜）
+
+Telegram:@Calvin13555
+WhatsApp:+65 85909777
+
+持续爆料！！！
