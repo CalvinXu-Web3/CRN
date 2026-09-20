@@ -13,7 +13,7 @@ window.APP_CONFIG = Object.freeze({
 });
 
 window.caseData = Object.freeze({
-  id: "CRN-2026-XXXX",
+  id: "CRN-2026-0703",
   estimatedFunds: "50,000,000 USDT",
   estimatedFundsLabel: "ESTIMATED FIGURE · PUBLIC SOURCE PENDING",
   caseStatus: "ACTIVE",
