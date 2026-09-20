@@ -2,14 +2,18 @@ window.CRNNetwork = (() => {
   const t = (key, fallback, params) => window.CRN_I18N?.t(key, fallback, params) ?? fallback;
   const value = raw => window.CRN_I18N?.value(raw) ?? raw;
   const find = id => window.networkData.find(node => node.id === id);
-  const walletExplorerUrl = "https://etherscan.io/address/0x7a53155f6dfcedc0061eb7247abb4250d691478f";
+  const explorerLinks = Object.freeze({
+    "pending-a": { url: "https://etherscan.io/address/0x7a53155f6dfcedc0061eb7247abb4250d691478f", labelKey: "network.openExplorer", labelFallback: "VIEW 4# ON ETHERSCAN" },
+    "pending-c": { url: "https://tronscan.org/address/TSCMwyQu9y27zG95deB2nDRkNNuZzkDTnY/transfers", labelKey: "network.openTronExplorer", labelFallback: "VIEW 1# ON TRONSCAN" }
+  });
   const svgNS = "http://www.w3.org/2000/svg";
   const element = (tag, attrs = {}) => { const node = document.createElementNS(svgNS, tag); Object.entries(attrs).forEach(([key, value]) => node.setAttribute(key, value)); return node; };
 
   function showNode(id) {
     const item = find(id);
     if (!item) return;
-    const explorerLink = id === "pending-a" ? `<a class="button button-ghost small drawer-explorer-link" href="${walletExplorerUrl}" target="_blank" rel="noopener noreferrer"><span>${t("network.openExplorer", "VIEW 4# ON ETHERSCAN")}</span><i aria-hidden="true">↗</i></a>` : "";
+    const explorer = explorerLinks[id];
+    const explorerLink = explorer ? `<a class="button button-ghost small drawer-explorer-link" href="${explorer.url}" target="_blank" rel="noopener noreferrer"><span>${t(explorer.labelKey, explorer.labelFallback)}</span><i aria-hidden="true">↗</i></a>` : "";
     window.CRNDrawer?.open(`
       <span class="drawer-type">${value(item.type)}</span>
       <h2>${value(item.name)}</h2>
