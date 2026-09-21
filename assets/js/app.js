@@ -1,4 +1,18 @@
 (() => {
+  const runtimeIdCounts = new Map();
+  const assignRuntimeIds = root => {
+    if (!(root instanceof Element)) return;
+    [root, ...root.querySelectorAll("*")].forEach(element => {
+      if (element.id) return;
+      const tag = element.tagName.toLowerCase();
+      const next = (runtimeIdCounts.get(tag) ?? 0) + 1;
+      runtimeIdCounts.set(tag, next);
+      element.id = `crn-runtime-${tag}-${String(next).padStart(3, "0")}`;
+    });
+  };
+  new MutationObserver(records => records.forEach(record => record.addedNodes.forEach(assignRuntimeIds)))
+    .observe(document.documentElement, { childList: true, subtree: true });
+
   let lastFocused = null;
   let activeModal = null;
   const t = (key, fallback, params) => window.CRN_I18N?.t(key, fallback, params) ?? fallback;

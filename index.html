@@ -1,114 +1,114 @@
 <!doctype html>
-<html lang="zh-CN">
-  <head>
+<html lang="zh-CN" id="crn-html-001">
+  <head id="crn-head-001">
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XPLL7QNHKD"></script>
-    <script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XPLL7QNHKD" id="crn-script-001"></script>
+    <script id="crn-script-002">
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-XPLL7QNHKD');
     </script>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#05070B" />
-    <meta name="description" content="CRN 汇集案件材料、投资者提交的信息与可核验的链上证据；不构成司法认定。" />
-    <meta property="og:title" content="CRN — 案件与追偿网络" />
-    <meta property="og:description" content="Web3 调查、链上证据与投资者追偿信息网络。" />
-    <meta property="og:image" content="assets/images/share-card.jpg" />
-    <meta property="og:url" content="/index.html?case=CRN-2026-0703" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="CRN — 案件与追偿网络" />
-    <meta name="twitter:description" content="Web3 调查、链上证据与投资者追偿信息网络。" />
-    <meta name="twitter:image" content="assets/images/share-card.jpg" />
-    <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <title>CRN — 案件与追偿网络</title>
+    <meta charset="UTF-8"  id="crn-meta-001"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"  id="crn-meta-002"/>
+    <meta name="theme-color" content="#05070B"  id="crn-meta-003"/>
+    <meta name="description" content="CRN 汇集案件材料、投资者提交的信息与可核验的链上证据；不构成司法认定。"  id="crn-meta-004"/>
+    <meta property="og:title" content="CRN — 案件与追偿网络"  id="crn-meta-005"/>
+    <meta property="og:description" content="Web3 调查、链上证据与投资者追偿信息网络。"  id="crn-meta-006"/>
+    <meta property="og:image" content="assets/images/share-card.jpg"  id="crn-meta-007"/>
+    <meta property="og:url" content="/index.html?case=CRN-2026-0703"  id="crn-meta-008"/>
+    <meta name="twitter:card" content="summary_large_image"  id="crn-meta-009"/>
+    <meta name="twitter:title" content="CRN — 案件与追偿网络"  id="crn-meta-010"/>
+    <meta name="twitter:description" content="Web3 调查、链上证据与投资者追偿信息网络。"  id="crn-meta-011"/>
+    <meta name="twitter:image" content="assets/images/share-card.jpg"  id="crn-meta-012"/>
+    <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg"  id="crn-link-001"/>
+    <link rel="stylesheet" href="assets/css/style.css"  id="crn-link-002"/>
+    <title id="crn-title-001">CRN — 案件与追偿网络</title>
   </head>
-  <body>
+  <body id="crn-body-001">
     <div id="boot-screen" class="boot-screen" aria-live="polite">
-      <div class="boot-mark">CRN</div>
-      <p data-i18n="boot.network">CASE &amp; RECOVERY NETWORK</p>
-      <div class="boot-line"><span></span></div>
+      <div class="boot-mark" id="crn-div-001">CRN</div>
+      <p data-i18n="boot.network" id="crn-p-001">CASE &amp; RECOVERY NETWORK</p>
+      <div class="boot-line" id="crn-div-002"><span id="crn-span-001"></span></div>
       <small id="boot-message" data-i18n="boot.initializing">INITIALIZING EVIDENCE NETWORK…</small>
       <button class="text-button" id="skip-boot" type="button" data-i18n="boot.skip">SKIP</button>
     </div>
 
     <canvas id="ambient-canvas" aria-hidden="true"></canvas>
-    <div class="page-noise" aria-hidden="true"></div>
+    <div class="page-noise" aria-hidden="true" id="crn-div-003"></div>
 
     <header class="navbar" id="top">
-      <a class="brand" href="#top" aria-label="CRN home" data-i18n-aria="nav.home">
-        <img src="assets/images/logo.svg" alt="" width="30" height="30" />
-        <span>CRN</span><em data-i18n="boot.network">CASE &amp; RECOVERY NETWORK</em>
+      <a class="brand" href="#top" aria-label="CRN home" data-i18n-aria="nav.home" id="crn-a-001">
+        <img src="assets/images/logo.svg" alt="" width="30" height="30"  id="crn-img-001"/>
+        <span id="crn-span-002">CRN</span><em data-i18n="boot.network" id="crn-em-001">CASE &amp; RECOVERY NETWORK</em>
       </a>
-      <nav class="desktop-nav" aria-label="Primary navigation" data-i18n-aria="nav.primary">
-        <a href="#case" data-i18n="nav.case">CASE</a>
-        <a href="#onchain" data-i18n="nav.onchain">ON-CHAIN</a>
-        <a href="#evidence" data-i18n="nav.evidence">EVIDENCE</a>
-        <a href="#recovery" data-i18n="nav.victims">VICTIMS</a>
-        <a href="#bounty" data-i18n="nav.bounty">BOUNTY</a>
+      <nav class="desktop-nav" aria-label="Primary navigation" data-i18n-aria="nav.primary" id="crn-nav-001">
+        <a href="#case" data-i18n="nav.case" id="crn-a-002">CASE</a>
+        <a href="#onchain" data-i18n="nav.onchain" id="crn-a-003">ON-CHAIN</a>
+        <a href="#evidence" data-i18n="nav.evidence" id="crn-a-004">EVIDENCE</a>
+        <a href="#recovery" data-i18n="nav.victims" id="crn-a-005">VICTIMS</a>
+        <a href="#bounty" data-i18n="nav.bounty" id="crn-a-006">BOUNTY</a>
       </nav>
-      <div class="nav-actions">
-        <div class="language-switch" role="group" aria-label="Select language" data-i18n-aria="language.label">
-          <button type="button" data-language="zh-CN" aria-pressed="true">中文</button>
-          <button type="button" data-language="en" aria-pressed="false">EN</button>
+      <div class="nav-actions" id="crn-div-004">
+        <div class="language-switch" role="group" aria-label="Select language" data-i18n-aria="language.label" id="crn-div-005">
+          <button type="button" data-language="zh-CN" aria-pressed="true" id="crn-button-001">中文</button>
+          <button type="button" data-language="en" aria-pressed="false" id="crn-button-002">EN</button>
         </div>
         <button class="icon-button" id="open-search" type="button" aria-label="Search public case records" data-i18n-aria="nav.search">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m20 20-4.7-4.7m2.2-5.05a7.25 7.25 0 1 1-14.5 0 7.25 7.25 0 0 1 14.5 0Z"/></svg>
+          <svg viewBox="0 0 24 24" aria-hidden="true" id="crn-svg-001"><path d="m20 20-4.7-4.7m2.2-5.05a7.25 7.25 0 1 1-14.5 0 7.25 7.25 0 0 1 14.5 0Z" id="crn-path-001"/></svg>
         </button>
-        <button class="button button-gold nav-share" type="button" data-share-open data-i18n="nav.share">SHARE CASE</button>
+        <button class="button button-gold nav-share" type="button" data-share-open data-i18n="nav.share" id="crn-button-003">SHARE CASE</button>
       </div>
     </header>
 
-    <main>
-      <section class="hero section-grid" aria-labelledby="hero-title">
-        <div class="hero-copy reveal">
-          <div class="eyebrow"><span class="live-dot"></span> <span data-i18n="hero.file">CASE FILE</span> <span id="hero-case-id">CRN-2026-0703</span></div>
-          <h1 id="hero-title" data-i18n="hero.title" data-i18n-html>INVESTOR<br /><span>RECOVERY</span><br />NETWORK</h1>
-          <div class="hero-amount">
+    <main id="crn-main-001">
+      <section class="hero section-grid" aria-labelledby="hero-title" id="crn-section-001">
+        <div class="hero-copy reveal" id="crn-div-006">
+          <div class="eyebrow" id="crn-div-007"><span class="live-dot" id="crn-span-003"></span> <span data-i18n="hero.file" id="crn-span-004">CASE FILE</span> <span id="hero-case-id">CRN-2026-0703</span></div>
+          <h1 id="hero-title" data-i18n="hero.title" data-i18n-html>INVESTOR<br  id="crn-br-001"/><span id="crn-span-005">RECOVERY</span><br  id="crn-br-002"/>NETWORK</h1>
+          <div class="hero-amount" id="crn-div-008">
             <strong id="hero-funds">50,000,000</strong>
-            <span>USDT</span>
-            <small data-i18n="hero.estimate">ESTIMATED FIGURE · PUBLIC SOURCE PENDING</small>
+            <span id="crn-span-006">USDT</span>
+            <small data-i18n="hero.estimate" id="crn-small-001">ESTIMATED FIGURE · PUBLIC SOURCE PENDING</small>
           </div>
-          <p class="hero-description" data-i18n="hero.description">A public network for case materials, verifiable on-chain evidence, and investor information submission.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#case"><span data-i18n="hero.explore">EXPLORE CASE</span> <i>↘</i></a>
-            <button class="button button-ghost" type="button" data-share-open><span data-i18n="nav.share">SHARE CASE</span> <i>↗</i></button>
+          <p class="hero-description" data-i18n="hero.description" id="crn-p-002">A public network for case materials, verifiable on-chain evidence, and investor information submission.</p>
+          <div class="hero-actions" id="crn-div-009">
+            <a class="button button-primary" href="#case" id="crn-a-007"><span data-i18n="hero.explore" id="crn-span-007">EXPLORE CASE</span> <i id="crn-i-001">↘</i></a>
+            <button class="button button-ghost" type="button" data-share-open id="crn-button-004"><span data-i18n="nav.share" id="crn-span-008">SHARE CASE</span> <i id="crn-i-002">↗</i></button>
           </div>
         </div>
-        <div class="hero-network reveal delay-1" aria-label="Illustrative on-chain network schematic. No on-chain data available." data-i18n-aria="hero.schematicAria">
-          <div class="network-label top-label"><span></span> <span data-i18n="hero.schematic">ON-CHAIN SCHEMATIC</span></div>
-          <svg viewBox="0 0 620 540" role="img" aria-labelledby="hero-network-title hero-network-desc">
+        <div class="hero-network reveal delay-1" aria-label="Illustrative on-chain network schematic. No on-chain data available." data-i18n-aria="hero.schematicAria" id="crn-div-010">
+          <div class="network-label top-label" id="crn-div-011"><span id="crn-span-009"></span> <span data-i18n="hero.schematic" id="crn-span-010">ON-CHAIN SCHEMATIC</span></div>
+          <svg viewBox="0 0 620 540" role="img" aria-labelledby="hero-network-title hero-network-desc" id="crn-svg-002">
             <title id="hero-network-title" data-i18n="hero.networkTitle">On-chain network schematic</title>
             <desc id="hero-network-desc" data-i18n="hero.networkDesc">An illustrative network only. Public chain data is pending verification.</desc>
-            <defs>
-              <linearGradient id="flowGold" x1="0" x2="1"><stop stop-color="#F5C76A" stop-opacity=".1"/><stop offset=".5" stop-color="#F5C76A"/><stop offset="1" stop-color="#4DA3FF" stop-opacity=".15"/></linearGradient>
-              <filter id="glow"><feGaussianBlur stdDeviation="5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+            <defs id="crn-defs-001">
+              <linearGradient id="flowGold" x1="0" x2="1"><stop stop-color="#F5C76A" stop-opacity=".1" id="crn-stop-001"/><stop offset=".5" stop-color="#F5C76A" id="crn-stop-002"/><stop offset="1" stop-color="#4DA3FF" stop-opacity=".15" id="crn-stop-003"/></linearGradient>
+              <filter id="glow"><feGaussianBlur stdDeviation="5" result="blur" id="crn-fegaussianblur-001"/><feMerge id="crn-femerge-001"><feMergeNode in="blur" id="crn-femergenode-001"/><feMergeNode in="SourceGraphic" id="crn-femergenode-002"/></feMerge></filter>
             </defs>
-            <g class="hero-network-lines">
-              <path d="M303 264 122 123M303 264 150 423M303 264 490 120M303 264 500 392M122 123 150 423M490 120 500 392"/>
-              <path class="pulse-path" d="M303 264 490 120"/>
+            <g class="hero-network-lines" id="crn-g-001">
+              <path d="M303 264 122 123M303 264 150 423M303 264 490 120M303 264 500 392M122 123 150 423M490 120 500 392" id="crn-path-002"/>
+              <path class="pulse-path" d="M303 264 490 120" id="crn-path-003"/>
             </g>
-            <g class="hero-node central" tabindex="0" data-node="case">
-              <circle r="93" cx="303" cy="264" class="outer"/><circle r="66" cx="303" cy="264" class="middle"/><circle r="45" cx="303" cy="264" class="inner" filter="url(#glow)"/>
-              <text x="303" y="255" data-i18n="hero.estimated">ESTIMATED</text><text x="303" y="278" class="big">50M</text><text x="303" y="299">USDT</text>
+            <g class="hero-node central" tabindex="0" data-node="case" id="crn-g-002">
+              <circle r="93" cx="303" cy="264" class="outer" id="crn-circle-001"/><circle r="66" cx="303" cy="264" class="middle" id="crn-circle-002"/><circle r="45" cx="303" cy="264" class="inner" filter="url(#glow)" id="crn-circle-003"/>
+              <text x="303" y="255" data-i18n="hero.estimated" id="crn-text-001">ESTIMATED</text><text x="303" y="278" class="big" id="crn-text-002">50M</text><text x="303" y="299" id="crn-text-003">USDT</text>
             </g>
-            <g class="hero-node satellite" tabindex="0" data-node="pending-a"><circle r="35" cx="122" cy="123"/><circle r="23" cx="122" cy="123"/><text x="122" y="130" data-i18n="hero.wallet">4#</text></g>
-            <g class="hero-node satellite" tabindex="0" data-node="pending-b"><circle r="35" cx="150" cy="423"/><circle r="23" cx="150" cy="423"/><text x="150" y="430" data-i18n="hero.okx">OKX</text></g>
-            <g class="hero-node satellite blue" tabindex="0" data-node="pending-c"><circle r="35" cx="490" cy="120"/><circle r="23" cx="490" cy="120"/><text x="490" y="127" data-i18n="hero.flow">1#</text></g>
-            <g class="hero-node satellite blue" tabindex="0" data-node="pending-d"><circle r="35" cx="500" cy="392"/><circle r="23" cx="500" cy="392"/><text x="500" y="399" data-i18n="hero.destination">Binance</text></g>
+            <g class="hero-node satellite" tabindex="0" data-node="pending-a" id="crn-g-003"><circle r="35" cx="122" cy="123" id="crn-circle-004"/><circle r="23" cx="122" cy="123" id="crn-circle-005"/><text x="122" y="130" data-i18n="hero.wallet" id="crn-text-004">4#</text></g>
+            <g class="hero-node satellite" tabindex="0" data-node="pending-b" id="crn-g-004"><circle r="35" cx="150" cy="423" id="crn-circle-006"/><circle r="23" cx="150" cy="423" id="crn-circle-007"/><text x="150" y="430" data-i18n="hero.okx" id="crn-text-005">OKX</text></g>
+            <g class="hero-node satellite blue" tabindex="0" data-node="pending-c" id="crn-g-005"><circle r="35" cx="490" cy="120" id="crn-circle-008"/><circle r="23" cx="490" cy="120" id="crn-circle-009"/><text x="490" y="127" data-i18n="hero.flow" id="crn-text-006">1#</text></g>
+            <g class="hero-node satellite blue" tabindex="0" data-node="pending-d" id="crn-g-006"><circle r="35" cx="500" cy="392" id="crn-circle-010"/><circle r="23" cx="500" cy="392" id="crn-circle-011"/><text x="500" y="399" data-i18n="hero.destination" id="crn-text-007">Binance</text></g>
           </svg>
-          <div class="network-caption"><span data-i18n="hero.noRecords">NO PUBLIC CHAIN RECORDS PUBLISHED</span><span data-i18n="hero.dataPending">DATA PENDING</span></div>
+          <div class="network-caption" id="crn-div-012"><span data-i18n="hero.noRecords" id="crn-span-011">NO PUBLIC CHAIN RECORDS PUBLISHED</span><span data-i18n="hero.dataPending" id="crn-span-012">DATA PENDING</span></div>
         </div>
         <div class="hero-status" id="hero-status" aria-label="Case status overview" data-i18n-aria="hero.statusAria"></div>
-        <a class="scroll-cue" href="#case" aria-label="Scroll to case overview" data-i18n-aria="case.title"><span></span> <span data-i18n="hero.scroll">SCROLL TO INVESTIGATE</span></a>
+        <a class="scroll-cue" href="#case" aria-label="Scroll to case overview" data-i18n-aria="case.title" id="crn-a-008"><span id="crn-span-013"></span> <span data-i18n="hero.scroll" id="crn-span-014">SCROLL TO INVESTIGATE</span></a>
       </section>
 
       <section class="section case-overview" id="case" aria-labelledby="case-title">
-        <div class="section-heading reveal">
-          <div><span class="section-index" data-i18n="case.index">01 / CASE FILE</span><h2 id="case-title" data-i18n="case.title">CASE OVERVIEW</h2></div>
-          <p data-i18n="case.description">Public information is intentionally limited to material that is available for review. Unverified records remain marked accordingly.</p>
+        <div class="section-heading reveal" id="crn-div-013">
+          <div id="crn-div-014"><span class="section-index" data-i18n="case.index" id="crn-span-015">01 / CASE FILE</span><h2 id="case-title" data-i18n="case.title">CASE OVERVIEW</h2></div>
+          <p data-i18n="case.description" id="crn-p-003">Public information is intentionally limited to material that is available for review. Unverified records remain marked accordingly.</p>
         </div>
         <div class="metric-grid" id="case-metrics"></div>
         <div class="case-meta panel reveal" id="case-meta"></div>
@@ -116,113 +116,113 @@
       </section>
 
       <section class="section timeline-section" id="timeline" aria-labelledby="timeline-title">
-        <div class="section-heading reveal"><div><span class="section-index" data-i18n="timeline.index">02 / CHRONOLOGY</span><h2 id="timeline-title" data-i18n="timeline.title">CASE TIMELINE</h2></div><p data-i18n="timeline.description">Open an entry to inspect its public status and source availability.</p></div>
+        <div class="section-heading reveal" id="crn-div-015"><div id="crn-div-016"><span class="section-index" data-i18n="timeline.index" id="crn-span-016">02 / CHRONOLOGY</span><h2 id="timeline-title" data-i18n="timeline.title">CASE TIMELINE</h2></div><p data-i18n="timeline.description" id="crn-p-004">Open an entry to inspect its public status and source availability.</p></div>
         <div class="timeline-wrap" id="timeline-list"></div>
       </section>
 
       <section class="section network-section" id="entities" aria-labelledby="entities-title">
-        <div class="section-heading reveal"><div><span class="section-index" data-i18n="network.index">03 / RELATIONSHIPS</span><h2 id="entities-title" data-i18n="network.title">PERSON / ENTITY NETWORK</h2></div><p data-i18n="network.description">Only public, necessary and reviewed relationships may appear in this view.</p></div>
-        <div class="network-panel panel reveal">
-          <div class="panel-topline"><span><i class="legend-dot case"></i><span data-i18n="network.case">CASE</span></span><span><i class="legend-dot pending"></i><span data-i18n="network.pending">DATA PENDING</span></span><span class="panel-note" data-i18n="network.select">SELECT A NODE FOR PUBLIC PROFILE</span></div>
+        <div class="section-heading reveal" id="crn-div-017"><div id="crn-div-018"><span class="section-index" data-i18n="network.index" id="crn-span-017">03 / RELATIONSHIPS</span><h2 id="entities-title" data-i18n="network.title">PERSON / ENTITY NETWORK</h2></div><p data-i18n="network.description" id="crn-p-005">Only public, necessary and reviewed relationships may appear in this view.</p></div>
+        <div class="network-panel panel reveal" id="crn-div-019">
+          <div class="panel-topline" id="crn-div-020"><span id="crn-span-018"><i class="legend-dot case" id="crn-i-003"></i><span data-i18n="network.case" id="crn-span-019">CASE</span></span><span id="crn-span-020"><i class="legend-dot pending" id="crn-i-004"></i><span data-i18n="network.pending" id="crn-span-021">DATA PENDING</span></span><span class="panel-note" data-i18n="network.select" id="crn-span-022">SELECT A NODE FOR PUBLIC PROFILE</span></div>
           <div id="entity-network" class="entity-network" aria-label="Public person and entity relationship graph" data-i18n-aria="network.graphAria"></div>
         </div>
       </section>
 
       <section class="section onchain-section" id="onchain" aria-labelledby="flow-title">
-        <div class="section-heading reveal"><div><span class="section-index" data-i18n="onchain.index">04 / ON-CHAIN</span><h2 id="flow-title" data-i18n="onchain.title">FOLLOW THE MONEY</h2></div><p data-i18n="onchain.description">Funds are not visualized as fact until verified chain records are available.</p></div>
-        <div class="flow-panel panel reveal">
-          <div class="flow-note"><span class="status-chip pending" data-i18n="hero.dataPending">DATA PENDING</span><p data-i18n="onchain.note">This is a structural investigation view, not a statement of transactions or wallet ownership.</p></div>
+        <div class="section-heading reveal" id="crn-div-021"><div id="crn-div-022"><span class="section-index" data-i18n="onchain.index" id="crn-span-023">04 / ON-CHAIN</span><h2 id="flow-title" data-i18n="onchain.title">FOLLOW THE MONEY</h2></div><p data-i18n="onchain.description" id="crn-p-006">Funds are not visualized as fact until verified chain records are available.</p></div>
+        <div class="flow-panel panel reveal" id="crn-div-023">
+          <div class="flow-note" id="crn-div-024"><span class="status-chip pending" data-i18n="hero.dataPending" id="crn-span-024">DATA PENDING</span><p data-i18n="onchain.note" id="crn-p-007">This is a structural investigation view, not a statement of transactions or wallet ownership.</p></div>
           <div id="fund-flow" aria-label="On-chain fund flow placeholder" data-i18n-aria="onchain.flowAria"></div>
         </div>
         <div class="wallet-profile panel reveal" id="wallet-profile"></div>
-        <div class="transactions-head reveal"><div><h3 data-i18n="onchain.transactions">TRANSACTIONS</h3><p data-i18n="onchain.transactionsDescription">Publicly validated transaction records will appear here.</p></div><button class="button button-ghost small" id="tx-search" type="button" data-i18n="onchain.searchTx">SEARCH TXID</button></div>
-        <div class="empty-record panel reveal"><span data-i18n="onchain.noTransactions">NO PUBLIC TRANSACTION RECORDS</span><p data-i18n="onchain.noTransactionsDescription">TXID, wallet address, chain and explorer links are intentionally withheld until independently verified.</p></div>
+        <div class="transactions-head reveal" id="crn-div-025"><div id="crn-div-026"><h3 data-i18n="onchain.transactions" id="crn-h3-001">TRANSACTIONS</h3><p data-i18n="onchain.transactionsDescription" id="crn-p-008">Publicly validated transaction records will appear here.</p></div><button class="button button-ghost small" id="tx-search" type="button" data-i18n="onchain.searchTx">SEARCH TXID</button></div>
+        <div class="empty-record panel reveal" id="crn-div-027"><span data-i18n="onchain.noTransactions" id="crn-span-025">NO PUBLIC TRANSACTION RECORDS</span><p data-i18n="onchain.noTransactionsDescription" id="crn-p-009">TXID, wallet address, chain and explorer links are intentionally withheld until independently verified.</p></div>
       </section>
 
       <section class="section evidence-section" id="evidence" aria-labelledby="evidence-title">
-        <div class="section-heading reveal"><div><span class="section-index" data-i18n="evidence.index">05 / EVIDENCE</span><h2 id="evidence-title" data-i18n="evidence.title">EVIDENCE CENTER</h2></div><p data-i18n="evidence.description">Public pages show summaries only. Sensitive originals must remain under controlled review.</p></div>
-        <div class="evidence-filter reveal" role="group" aria-label="Evidence categories" data-i18n-aria="evidence.categories">
-          <button class="filter active" type="button" data-filter="ALL" data-i18n="evidence.all">ALL</button><button class="filter" type="button" data-filter="ON-CHAIN" data-i18n="evidence.onchain">ON-CHAIN</button><button class="filter" type="button" data-filter="COMMUNICATION" data-i18n="evidence.communication">COMMUNICATION</button><button class="filter" type="button" data-filter="PAYMENT" data-i18n="evidence.payment">PAYMENT RECORDS</button><button class="filter" type="button" data-filter="LEGAL" data-i18n="evidence.legal">LEGAL DOCUMENTS</button>
+        <div class="section-heading reveal" id="crn-div-028"><div id="crn-div-029"><span class="section-index" data-i18n="evidence.index" id="crn-span-026">05 / EVIDENCE</span><h2 id="evidence-title" data-i18n="evidence.title">EVIDENCE CENTER</h2></div><p data-i18n="evidence.description" id="crn-p-010">Public pages show summaries only. Sensitive originals must remain under controlled review.</p></div>
+        <div class="evidence-filter reveal" role="group" aria-label="Evidence categories" data-i18n-aria="evidence.categories" id="crn-div-030">
+          <button class="filter active" type="button" data-filter="ALL" data-i18n="evidence.all" id="crn-button-005">ALL</button><button class="filter" type="button" data-filter="ON-CHAIN" data-i18n="evidence.onchain" id="crn-button-006">ON-CHAIN</button><button class="filter" type="button" data-filter="COMMUNICATION" data-i18n="evidence.communication" id="crn-button-007">COMMUNICATION</button><button class="filter" type="button" data-filter="PAYMENT" data-i18n="evidence.payment" id="crn-button-008">PAYMENT RECORDS</button><button class="filter" type="button" data-filter="LEGAL" data-i18n="evidence.legal" id="crn-button-009">LEGAL DOCUMENTS</button>
         </div>
         <div class="evidence-grid" id="evidence-grid"></div>
-        <div class="evidence-submit-card reveal">
-          <div><span class="section-index" data-i18n="evidence.secureIntake">SECURE INTAKE</span><h3 data-i18n="evidence.submitTitle">HAVE MATERIAL TO SUBMIT?</h3><p data-i18n="evidence.submitDescription">Local demo mode supports a private file preview on this device only. No server-side storage is configured.</p></div>
-          <button class="button button-primary" type="button" data-evidence-open><span data-i18n="evidence.submit">SUBMIT EVIDENCE</span> <i>↗</i></button>
+        <div class="evidence-submit-card reveal" id="crn-div-031">
+          <div id="crn-div-032"><span class="section-index" data-i18n="evidence.secureIntake" id="crn-span-027">SECURE INTAKE</span><h3 data-i18n="evidence.submitTitle" id="crn-h3-002">HAVE MATERIAL TO SUBMIT?</h3><p data-i18n="evidence.submitDescription" id="crn-p-011">Local demo mode supports a private file preview on this device only. No server-side storage is configured.</p></div>
+          <button class="button button-primary" type="button" data-evidence-open id="crn-button-010"><span data-i18n="evidence.submit" id="crn-span-028">SUBMIT EVIDENCE</span> <i id="crn-i-005">↗</i></button>
         </div>
       </section>
 
       <section class="section recovery-section" id="recovery" aria-labelledby="recovery-title">
-        <div class="recovery-panel reveal">
-          <div><span class="section-index" data-i18n="recovery.index">06 / INVESTOR RECOVERY</span><h2 id="recovery-title" data-i18n="recovery.title" data-i18n-html>WERE YOU<br />AFFECTED?</h2><p data-i18n="recovery.description">Share information securely. Connecting a wallet is never required to report an impact or submit information.</p></div>
-          <div class="recovery-actions">
-            <button class="recovery-action" type="button" data-recovery="victim"><span>01</span><strong data-i18n="recovery.victim">I AM A VICTIM</strong><i>↗</i></button>
-            <button class="recovery-action" type="button" data-evidence-open><span>02</span><strong data-i18n="recovery.haveEvidence">I HAVE EVIDENCE</strong><i>↗</i></button>
-            <button class="recovery-action" type="button" data-recovery="information"><span>03</span><strong data-i18n="recovery.haveInfo">I HAVE INFORMATION</strong><i>↗</i></button>
+        <div class="recovery-panel reveal" id="crn-div-033">
+          <div id="crn-div-034"><span class="section-index" data-i18n="recovery.index" id="crn-span-029">06 / INVESTOR RECOVERY</span><h2 id="recovery-title" data-i18n="recovery.title" data-i18n-html>WERE YOU<br  id="crn-br-003"/>AFFECTED?</h2><p data-i18n="recovery.description" id="crn-p-012">Share information securely. Connecting a wallet is never required to report an impact or submit information.</p></div>
+          <div class="recovery-actions" id="crn-div-035">
+            <button class="recovery-action" type="button" data-recovery="victim" id="crn-button-011"><span id="crn-span-030">01</span><strong data-i18n="recovery.victim" id="crn-strong-001">I AM A VICTIM</strong><i id="crn-i-006">↗</i></button>
+            <button class="recovery-action" type="button" data-evidence-open id="crn-button-012"><span id="crn-span-031">02</span><strong data-i18n="recovery.haveEvidence" id="crn-strong-002">I HAVE EVIDENCE</strong><i id="crn-i-007">↗</i></button>
+            <button class="recovery-action" type="button" data-recovery="information" id="crn-button-013"><span id="crn-span-032">03</span><strong data-i18n="recovery.haveInfo" id="crn-strong-003">I HAVE INFORMATION</strong><i id="crn-i-008">↗</i></button>
           </div>
         </div>
       </section>
 
       <section class="section updates-section" id="updates" aria-labelledby="updates-title">
-        <div class="section-heading reveal"><div><span class="section-index" data-i18n="updates.index">07 / UPDATES</span><h2 id="updates-title" data-i18n="updates.title">CASE UPDATES &amp; MEDIA</h2></div><p data-i18n="updates.description">Updates and media references are published only when their sources can be identified.</p></div>
+        <div class="section-heading reveal" id="crn-div-036"><div id="crn-div-037"><span class="section-index" data-i18n="updates.index" id="crn-span-033">07 / UPDATES</span><h2 id="updates-title" data-i18n="updates.title">CASE UPDATES &amp; MEDIA</h2></div><p data-i18n="updates.description" id="crn-p-013">Updates and media references are published only when their sources can be identified.</p></div>
         <div class="updates-grid reveal" id="updates-grid"></div>
       </section>
 
       <section class="section bounty-section" id="bounty" aria-labelledby="bounty-title">
-        <div class="bounty-shell reveal">
-          <div class="bounty-copy"><span class="section-index" data-i18n="bounty.index">08 / OPTIONAL MODULE</span><h2 id="bounty-title" data-i18n="bounty.title">BOUNTY</h2><p data-i18n="bounty.description">In Core mode, case distribution is fully available while campaign rewards, verification and claiming are disabled.</p><div class="mode-indicator"><span></span> <span data-i18n="bounty.mode">APP MODE:</span> <strong>CORE</strong></div></div>
+        <div class="bounty-shell reveal" id="crn-div-038">
+          <div class="bounty-copy" id="crn-div-039"><span class="section-index" data-i18n="bounty.index" id="crn-span-034">08 / OPTIONAL MODULE</span><h2 id="bounty-title" data-i18n="bounty.title">BOUNTY</h2><p data-i18n="bounty.description" id="crn-p-014">In Core mode, case distribution is fully available while campaign rewards, verification and claiming are disabled.</p><div class="mode-indicator" id="crn-div-040"><span id="crn-span-035"></span> <span data-i18n="bounty.mode" id="crn-span-036">APP MODE:</span> <strong id="crn-strong-004">CORE</strong></div></div>
           <div class="bounty-state" id="bounty-state"></div>
         </div>
       </section>
 
       <section class="section share-section" id="share" aria-labelledby="share-title">
-        <div class="share-panel reveal">
-          <div><span class="section-index" data-i18n="share.index">09 / SPREAD VERIFIED INFORMATION</span><h2 id="share-title" data-i18n="share.title" data-i18n-html>SHARE THIS<br /><em>CASE.</em></h2><p data-i18n="share.description">Help route public, carefully labeled information to people who may be able to contribute evidence or intelligence.</p></div>
-          <div class="share-panel-actions"><button class="button button-gold large" type="button" data-share-open><span data-i18n="share.open">OPEN SHARE CENTER</span> <i>↗</i></button><button class="button button-ghost" id="copy-case-link" type="button" data-i18n="share.copy">COPY CASE LINK</button><p class="share-assurance"><span>●</span> <span data-i18n="share.assurance">Sharing does not require a wallet or active bounty.</span></p></div>
+        <div class="share-panel reveal" id="crn-div-041">
+          <div id="crn-div-042"><span class="section-index" data-i18n="share.index" id="crn-span-037">09 / SPREAD VERIFIED INFORMATION</span><h2 id="share-title" data-i18n="share.title" data-i18n-html>SHARE THIS<br  id="crn-br-004"/><em id="crn-em-002">CASE.</em></h2><p data-i18n="share.description" id="crn-p-015">Help route public, carefully labeled information to people who may be able to contribute evidence or intelligence.</p></div>
+          <div class="share-panel-actions" id="crn-div-043"><button class="button button-gold large" type="button" data-share-open id="crn-button-014"><span data-i18n="share.open" id="crn-span-038">OPEN SHARE CENTER</span> <i id="crn-i-009">↗</i></button><button class="button button-ghost" id="copy-case-link" type="button" data-i18n="share.copy">COPY CASE LINK</button><p class="share-assurance" id="crn-p-016"><span id="crn-span-039">●</span> <span data-i18n="share.assurance" id="crn-span-040">Sharing does not require a wallet or active bounty.</span></p></div>
         </div>
       </section>
 
       <section class="legal section" id="legal">
-        <div class="legal-mark">CRN</div>
-        <div><span class="section-index" data-i18n="legal.index">LEGAL NOTICE</span><p data-i18n="legal.copy">This website organizes and displays case-related materials, investor-submitted information and verifiable on-chain data. It does not constitute a criminal finding by a judicial authority. Matters not confirmed through legal process remain subject to the final determination of competent authorities. The operator does not encourage violence, harassment, threats, vigilantism, doxxing, or attacks on uninvolved people. Public information must comply with applicable privacy, data-protection and other laws.</p></div>
+        <div class="legal-mark" id="crn-div-044">CRN</div>
+        <div id="crn-div-045"><span class="section-index" data-i18n="legal.index" id="crn-span-041">LEGAL NOTICE</span><p data-i18n="legal.copy" id="crn-p-017">This website organizes and displays case-related materials, investor-submitted information and verifiable on-chain data. It does not constitute a criminal finding by a judicial authority. Matters not confirmed through legal process remain subject to the final determination of competent authorities. The operator does not encourage violence, harassment, threats, vigilantism, doxxing, or attacks on uninvolved people. Public information must comply with applicable privacy, data-protection and other laws.</p></div>
       </section>
     </main>
 
-    <footer class="footer"><a class="brand" href="#top"><img src="assets/images/logo.svg" alt="" width="26" height="26" /><span>CRN</span></a><p><span data-i18n="footer.network">CASE &amp; RECOVERY NETWORK</span> · <span id="footer-year"></span></p><a href="#legal" data-i18n="footer.legal">LEGAL NOTICE</a></footer>
+    <footer class="footer" id="crn-footer-001"><a class="brand" href="#top" id="crn-a-009"><img src="assets/images/logo.svg" alt="" width="26" height="26"  id="crn-img-002"/><span id="crn-span-042">CRN</span></a><p id="crn-p-018"><span data-i18n="footer.network" id="crn-span-043">CASE &amp; RECOVERY NETWORK</span> · <span id="footer-year"></span></p><a href="#legal" data-i18n="footer.legal" id="crn-a-010">LEGAL NOTICE</a></footer>
 
-    <button class="floating-share" type="button" data-share-open aria-label="Share this case" data-i18n-aria="nav.share"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 8 19 12l-4 4M19 12H5"/></svg><span data-i18n="floating.share">SHARE</span></button>
-    <nav class="mobile-bar" aria-label="Mobile navigation" data-i18n-aria="mobile.navigation"><a href="#case" data-i18n="nav.case">CASE</a><a href="#onchain" data-i18n="nav.onchain">ON-CHAIN</a><a href="#evidence" data-i18n="nav.evidence">EVIDENCE</a><button type="button" data-share-open data-i18n="floating.share">SHARE</button></nav>
+    <button class="floating-share" type="button" data-share-open aria-label="Share this case" data-i18n-aria="nav.share" id="crn-button-015"><svg viewBox="0 0 24 24" aria-hidden="true" id="crn-svg-003"><path d="M15 8 19 12l-4 4M19 12H5" id="crn-path-004"/></svg><span data-i18n="floating.share" id="crn-span-044">SHARE</span></button>
+    <nav class="mobile-bar" aria-label="Mobile navigation" data-i18n-aria="mobile.navigation" id="crn-nav-002"><a href="#case" data-i18n="nav.case" id="crn-a-011">CASE</a><a href="#onchain" data-i18n="nav.onchain" id="crn-a-012">ON-CHAIN</a><a href="#evidence" data-i18n="nav.evidence" id="crn-a-013">EVIDENCE</a><button type="button" data-share-open data-i18n="floating.share" id="crn-button-016">SHARE</button></nav>
 
     <div class="modal-backdrop" id="modal-backdrop" hidden></div>
-    <aside class="drawer" id="detail-drawer" aria-label="Record details" aria-hidden="true"><button class="drawer-close" type="button" data-close aria-label="Close details" data-i18n-aria="modal.closeDetails">×</button><div id="drawer-content"></div></aside>
+    <aside class="drawer" id="detail-drawer" aria-label="Record details" aria-hidden="true"><button class="drawer-close" type="button" data-close aria-label="Close details" data-i18n-aria="modal.closeDetails" id="crn-button-017">×</button><div id="drawer-content"></div></aside>
     <section class="modal share-modal" id="share-modal" role="dialog" aria-modal="true" aria-labelledby="share-modal-title" hidden>
-      <button class="modal-close" type="button" data-close aria-label="Close share center" data-i18n-aria="modal.closeShare">×</button>
-      <span class="section-index" data-i18n="share.distribution">DISTRIBUTION CENTER</span><h2 id="share-modal-title" data-i18n="share.modalTitle">SHARE THE CASE</h2><p id="share-modal-copy" data-i18n="share.modalCopy">Help spread carefully labeled public information.</p>
-      <div class="share-url"><input id="share-url" aria-label="Case share URL" data-i18n-aria="share.url" readonly /><button id="copy-share-url" type="button" data-i18n="share.copy">COPY</button></div>
-      <div class="social-grid"><button type="button" data-social="x">X</button><button type="button" data-social="telegram">TELEGRAM</button><button type="button" data-social="whatsapp">WHATSAPP</button><button type="button" data-social="facebook">FACEBOOK</button><button type="button" data-social="linkedin">LINKEDIN</button><button type="button" data-social="line">LINE</button><button type="button" data-social="email">EMAIL</button><button type="button" id="native-share">NATIVE SHARE</button></div>
-      <div class="share-tools"><div class="qr-wrap"><img id="qr-image" alt="QR code for the current case URL" /><span data-i18n="share.qr">CURRENT CASE URL</span></div><div><h3 data-i18n="share.cardTitle">SHARE CARD</h3><p data-i18n="share.cardDescription">A local, clearly labeled visual card for distribution.</p><button class="button button-primary small" id="generate-card" type="button" data-i18n="share.generate">GENERATE SHARE CARD</button><button class="button button-ghost small" id="download-card" type="button" disabled data-i18n="share.download">DOWNLOAD IMAGE</button><button class="button button-ghost small" id="share-card-file" type="button" disabled data-i18n="share.shareImage">SHARE IMAGE</button></div></div>
+      <button class="modal-close" type="button" data-close aria-label="Close share center" data-i18n-aria="modal.closeShare" id="crn-button-018">×</button>
+      <span class="section-index" data-i18n="share.distribution" id="crn-span-045">DISTRIBUTION CENTER</span><h2 id="share-modal-title" data-i18n="share.modalTitle">SHARE THE CASE</h2><p id="share-modal-copy" data-i18n="share.modalCopy">Help spread carefully labeled public information.</p>
+      <div class="share-url" id="crn-div-046"><input id="share-url" aria-label="Case share URL" data-i18n-aria="share.url" readonly /><button id="copy-share-url" type="button" data-i18n="share.copy">COPY</button></div>
+      <div class="social-grid" id="crn-div-047"><button type="button" data-social="x" id="crn-button-019">X</button><button type="button" data-social="telegram" id="crn-button-020">TELEGRAM</button><button type="button" data-social="whatsapp" id="crn-button-021">WHATSAPP</button><button type="button" data-social="facebook" id="crn-button-022">FACEBOOK</button><button type="button" data-social="linkedin" id="crn-button-023">LINKEDIN</button><button type="button" data-social="line" id="crn-button-024">LINE</button><button type="button" data-social="email" id="crn-button-025">EMAIL</button><button type="button" id="native-share">NATIVE SHARE</button></div>
+      <div class="share-tools" id="crn-div-048"><div class="qr-wrap" id="crn-div-049"><img id="qr-image" alt="QR code for the current case URL" /><span data-i18n="share.qr" id="crn-span-046">CURRENT CASE URL</span></div><div id="crn-div-050"><h3 data-i18n="share.cardTitle" id="crn-h3-003">SHARE CARD</h3><p data-i18n="share.cardDescription" id="crn-p-019">A local, clearly labeled visual card for distribution.</p><button class="button button-primary small" id="generate-card" type="button" data-i18n="share.generate">GENERATE SHARE CARD</button><button class="button button-ghost small" id="download-card" type="button" disabled data-i18n="share.download">DOWNLOAD IMAGE</button><button class="button button-ghost small" id="share-card-file" type="button" disabled data-i18n="share.shareImage">SHARE IMAGE</button></div></div>
       <canvas id="share-card-canvas" width="1200" height="630" hidden></canvas>
     </section>
     <section class="modal form-modal" id="evidence-modal" role="dialog" aria-modal="true" aria-labelledby="evidence-modal-title" hidden>
-      <button class="modal-close" type="button" data-close aria-label="Close evidence form" data-i18n-aria="modal.closeEvidence">×</button><span class="section-index" data-i18n="form.localDemo">LOCAL DEMO MODE</span><h2 id="evidence-modal-title" data-i18n="form.evidenceTitle">SUBMIT EVIDENCE</h2><p class="warning-copy" data-i18n="form.evidenceWarning">DO NOT SUBMIT private keys, seed phrases, passwords or 2FA codes. No server-side storage is configured in this demo.</p>
-      <form id="evidence-form"><div class="form-row"><label><span data-i18n="form.evidenceType">EVIDENCE TYPE</span><select name="type"><option data-i18n="evidence.onchain">ON-CHAIN</option><option data-i18n="evidence.communication">COMMUNICATION</option><option data-i18n="evidence.payment">PAYMENT RECORDS</option><option data-i18n="form.projectDocs">PROJECT DOCUMENTS</option><option data-i18n="form.corporateRecords">CORPORATE RECORDS</option><option data-i18n="evidence.legal">LEGAL DOCUMENTS</option></select></label><label><span data-i18n="form.eventDate">EVENT DATE</span><input name="eventDate" type="date" /></label></div><label><span data-i18n="form.evidenceDescription">EVIDENCE DESCRIPTION</span><textarea name="description" rows="3" placeholder="Describe why the material may be relevant." data-i18n-placeholder="form.evidencePlaceholder"></textarea></label><div class="form-row"><label><span data-i18n="form.relatedPerson">RELATED PERSON</span><input name="person" autocomplete="off" /></label><label><span data-i18n="form.relatedWallet">RELATED WALLET</span><input name="wallet" autocomplete="off" /></label></div><div class="form-row"><label><span data-i18n="form.relatedTx">RELATED TXID</span><input name="txid" autocomplete="off" /></label><label><span data-i18n="form.email">CONTACT EMAIL</span><input name="email" type="email" autocomplete="email" /></label></div><label class="file-drop" id="file-drop"><input id="evidence-files" type="file" multiple accept=".jpg,.jpeg,.png,.webp,.pdf,.docx,.xlsx,.csv,.txt,.mp4,.mov,.mp3,.wav,.zip" /><strong data-i18n="form.dropFiles">DROP FILES HERE OR SELECT FILES</strong><span data-i18n="form.fileTypes">JPG, PNG, WEBP, PDF, DOCX, XLSX, CSV, TXT, MP4, MOV, MP3, WAV, ZIP</span></label><div id="file-list" class="file-list" aria-live="polite"></div><button class="button button-primary" type="submit" data-i18n="form.createLocal">CREATE LOCAL EVIDENCE RECORD</button></form>
+      <button class="modal-close" type="button" data-close aria-label="Close evidence form" data-i18n-aria="modal.closeEvidence" id="crn-button-026">×</button><span class="section-index" data-i18n="form.localDemo" id="crn-span-047">LOCAL DEMO MODE</span><h2 id="evidence-modal-title" data-i18n="form.evidenceTitle">SUBMIT EVIDENCE</h2><p class="warning-copy" data-i18n="form.evidenceWarning" id="crn-p-020">DO NOT SUBMIT private keys, seed phrases, passwords or 2FA codes. No server-side storage is configured in this demo.</p>
+      <form id="evidence-form"><div class="form-row" id="crn-div-051"><label id="crn-label-001"><span data-i18n="form.evidenceType" id="crn-span-048">EVIDENCE TYPE</span><select name="type" id="crn-select-001"><option data-i18n="evidence.onchain" id="crn-option-001">ON-CHAIN</option><option data-i18n="evidence.communication" id="crn-option-002">COMMUNICATION</option><option data-i18n="evidence.payment" id="crn-option-003">PAYMENT RECORDS</option><option data-i18n="form.projectDocs" id="crn-option-004">PROJECT DOCUMENTS</option><option data-i18n="form.corporateRecords" id="crn-option-005">CORPORATE RECORDS</option><option data-i18n="evidence.legal" id="crn-option-006">LEGAL DOCUMENTS</option></select></label><label id="crn-label-002"><span data-i18n="form.eventDate" id="crn-span-049">EVENT DATE</span><input name="eventDate" type="date"  id="crn-input-001"/></label></div><label id="crn-label-003"><span data-i18n="form.evidenceDescription" id="crn-span-050">EVIDENCE DESCRIPTION</span><textarea name="description" rows="3" placeholder="Describe why the material may be relevant." data-i18n-placeholder="form.evidencePlaceholder" id="crn-textarea-001"></textarea></label><div class="form-row" id="crn-div-052"><label id="crn-label-004"><span data-i18n="form.relatedPerson" id="crn-span-051">RELATED PERSON</span><input name="person" autocomplete="off"  id="crn-input-002"/></label><label id="crn-label-005"><span data-i18n="form.relatedWallet" id="crn-span-052">RELATED WALLET</span><input name="wallet" autocomplete="off"  id="crn-input-003"/></label></div><div class="form-row" id="crn-div-053"><label id="crn-label-006"><span data-i18n="form.relatedTx" id="crn-span-053">RELATED TXID</span><input name="txid" autocomplete="off"  id="crn-input-004"/></label><label id="crn-label-007"><span data-i18n="form.email" id="crn-span-054">CONTACT EMAIL</span><input name="email" type="email" autocomplete="email"  id="crn-input-005"/></label></div><label class="file-drop" id="file-drop"><input id="evidence-files" type="file" multiple accept=".jpg,.jpeg,.png,.webp,.pdf,.docx,.xlsx,.csv,.txt,.mp4,.mov,.mp3,.wav,.zip" /><strong data-i18n="form.dropFiles" id="crn-strong-005">DROP FILES HERE OR SELECT FILES</strong><span data-i18n="form.fileTypes" id="crn-span-055">JPG, PNG, WEBP, PDF, DOCX, XLSX, CSV, TXT, MP4, MOV, MP3, WAV, ZIP</span></label><div id="file-list" class="file-list" aria-live="polite"></div><button class="button button-primary" type="submit" data-i18n="form.createLocal" id="crn-button-027">CREATE LOCAL EVIDENCE RECORD</button></form>
     </section>
-    <section class="modal form-modal" id="recovery-modal" role="dialog" aria-modal="true" aria-labelledby="recovery-modal-title" hidden><button class="modal-close" type="button" data-close aria-label="Close information form" data-i18n-aria="modal.closeInfo">×</button><span class="section-index" data-i18n="form.recoveryCenter">INVESTOR RECOVERY CENTER</span><h2 id="recovery-modal-title" data-i18n="form.shareInformation">SHARE INFORMATION</h2><p data-i18n="form.recoveryWarning">Local demo mode only. Do not include passwords, private keys, seed phrases or 2FA codes.</p><form id="recovery-form"><div class="form-row"><label><span data-i18n="form.name">NAME / ALIAS</span><input name="name" autocomplete="name" /></label><label><span data-i18n="form.email">EMAIL</span><input name="email" type="email" autocomplete="email" /></label></div><div class="form-row"><label><span data-i18n="form.country">COUNTRY</span><input name="country" autocomplete="country-name" /></label><label><span data-i18n="form.amount">INVESTMENT AMOUNT</span><input name="amount" inputmode="decimal" /></label></div><div class="form-row"><label><span data-i18n="form.investmentDate">INVESTMENT DATE</span><input name="date" type="date" /></label><label><span data-i18n="form.project">PROJECT / PLATFORM</span><input name="project" /></label></div><label><span data-i18n="form.wallet">WALLET ADDRESS</span><input name="wallet" autocomplete="off" /></label><label><span data-i18n="form.txHash">TRANSACTION HASH</span><input name="tx" autocomplete="off" /></label><label><span data-i18n="form.description">DESCRIPTION</span><textarea name="description" rows="4"></textarea></label><button class="button button-primary" type="submit" data-i18n="form.saveDraft">SAVE LOCAL DEMO DRAFT</button></form></section>
-    <section class="modal bounty-modal" id="bounty-modal" role="dialog" aria-modal="true" aria-labelledby="bounty-modal-title" hidden><button class="modal-close" type="button" data-close aria-label="Close bounty details" data-i18n-aria="modal.closeBounty">×</button><span class="section-index" data-i18n="bounty.modalIndex">OPTIONAL INCENTIVE MODULE</span><h2 id="bounty-modal-title" data-i18n="bounty.modalTitle">BOUNTY IS OFF</h2><p data-i18n="bounty.modalCopy">There is no active campaign in Core mode. Case browsing, evidence submission, QR, sharing and referral links continue normally.</p><div class="bounty-demo-grid"><div><span data-i18n="bounty.campaign">CAMPAIGN</span><strong data-i18n="bounty.noActive">NO ACTIVE BOUNTY</strong></div><div><span data-i18n="bounty.pool">POOL</span><strong data-i18n="bounty.unavailable">DATA UNAVAILABLE</strong></div><div><span data-i18n="bounty.claim">CLAIM</span><strong data-i18n="bounty.disabled">DISABLED</strong></div></div><div class="bounty-roles"><section><span data-i18n="bounty.sponsor">SPONSOR DASHBOARD</span><strong data-i18n="bounty.funded">TOTAL FUNDED · DATA UNAVAILABLE</strong><small data-i18n="bounty.sponsorDescription">Fund, pause, close and withdraw controls are disabled until a reviewed contract and active campaign are configured.</small></section><section><span data-i18n="bounty.sharer">SHARER DASHBOARD</span><strong data-i18n="bounty.earned">TOTAL EARNED · DATA UNAVAILABLE</strong><small data-i18n="bounty.sharerDescription">Referral links continue to work for distribution analytics, but no rewards are calculated in Core mode.</small></section></div><button class="button button-ghost" id="claim-demo" type="button" data-i18n="bounty.claimDemo">CLAIM REWARD (DEMO)</button></section>
+    <section class="modal form-modal" id="recovery-modal" role="dialog" aria-modal="true" aria-labelledby="recovery-modal-title" hidden><button class="modal-close" type="button" data-close aria-label="Close information form" data-i18n-aria="modal.closeInfo" id="crn-button-028">×</button><span class="section-index" data-i18n="form.recoveryCenter" id="crn-span-056">INVESTOR RECOVERY CENTER</span><h2 id="recovery-modal-title" data-i18n="form.shareInformation">SHARE INFORMATION</h2><p data-i18n="form.recoveryWarning" id="crn-p-021">Local demo mode only. Do not include passwords, private keys, seed phrases or 2FA codes.</p><form id="recovery-form"><div class="form-row" id="crn-div-054"><label id="crn-label-008"><span data-i18n="form.name" id="crn-span-057">NAME / ALIAS</span><input name="name" autocomplete="name"  id="crn-input-006"/></label><label id="crn-label-009"><span data-i18n="form.email" id="crn-span-058">EMAIL</span><input name="email" type="email" autocomplete="email"  id="crn-input-007"/></label></div><div class="form-row" id="crn-div-055"><label id="crn-label-010"><span data-i18n="form.country" id="crn-span-059">COUNTRY</span><input name="country" autocomplete="country-name"  id="crn-input-008"/></label><label id="crn-label-011"><span data-i18n="form.amount" id="crn-span-060">INVESTMENT AMOUNT</span><input name="amount" inputmode="decimal"  id="crn-input-009"/></label></div><div class="form-row" id="crn-div-056"><label id="crn-label-012"><span data-i18n="form.investmentDate" id="crn-span-061">INVESTMENT DATE</span><input name="date" type="date"  id="crn-input-010"/></label><label id="crn-label-013"><span data-i18n="form.project" id="crn-span-062">PROJECT / PLATFORM</span><input name="project"  id="crn-input-011"/></label></div><label id="crn-label-014"><span data-i18n="form.wallet" id="crn-span-063">WALLET ADDRESS</span><input name="wallet" autocomplete="off"  id="crn-input-012"/></label><label id="crn-label-015"><span data-i18n="form.txHash" id="crn-span-064">TRANSACTION HASH</span><input name="tx" autocomplete="off"  id="crn-input-013"/></label><label id="crn-label-016"><span data-i18n="form.description" id="crn-span-065">DESCRIPTION</span><textarea name="description" rows="4" id="crn-textarea-002"></textarea></label><button class="button button-primary" type="submit" data-i18n="form.saveDraft" id="crn-button-029">SAVE LOCAL DEMO DRAFT</button></form></section>
+    <section class="modal bounty-modal" id="bounty-modal" role="dialog" aria-modal="true" aria-labelledby="bounty-modal-title" hidden><button class="modal-close" type="button" data-close aria-label="Close bounty details" data-i18n-aria="modal.closeBounty" id="crn-button-030">×</button><span class="section-index" data-i18n="bounty.modalIndex" id="crn-span-066">OPTIONAL INCENTIVE MODULE</span><h2 id="bounty-modal-title" data-i18n="bounty.modalTitle">BOUNTY IS OFF</h2><p data-i18n="bounty.modalCopy" id="crn-p-022">There is no active campaign in Core mode. Case browsing, evidence submission, QR, sharing and referral links continue normally.</p><div class="bounty-demo-grid" id="crn-div-057"><div id="crn-div-058"><span data-i18n="bounty.campaign" id="crn-span-067">CAMPAIGN</span><strong data-i18n="bounty.noActive" id="crn-strong-006">NO ACTIVE BOUNTY</strong></div><div id="crn-div-059"><span data-i18n="bounty.pool" id="crn-span-068">POOL</span><strong data-i18n="bounty.unavailable" id="crn-strong-007">DATA UNAVAILABLE</strong></div><div id="crn-div-060"><span data-i18n="bounty.claim" id="crn-span-069">CLAIM</span><strong data-i18n="bounty.disabled" id="crn-strong-008">DISABLED</strong></div></div><div class="bounty-roles" id="crn-div-061"><section id="crn-section-002"><span data-i18n="bounty.sponsor" id="crn-span-070">SPONSOR DASHBOARD</span><strong data-i18n="bounty.funded" id="crn-strong-009">TOTAL FUNDED · DATA UNAVAILABLE</strong><small data-i18n="bounty.sponsorDescription" id="crn-small-002">Fund, pause, close and withdraw controls are disabled until a reviewed contract and active campaign are configured.</small></section><section id="crn-section-003"><span data-i18n="bounty.sharer" id="crn-span-071">SHARER DASHBOARD</span><strong data-i18n="bounty.earned" id="crn-strong-010">TOTAL EARNED · DATA UNAVAILABLE</strong><small data-i18n="bounty.sharerDescription" id="crn-small-003">Referral links continue to work for distribution analytics, but no rewards are calculated in Core mode.</small></section></div><button class="button button-ghost" id="claim-demo" type="button" data-i18n="bounty.claimDemo">CLAIM REWARD (DEMO)</button></section>
     <div class="toast-region" id="toast-region" aria-live="polite" aria-atomic="true"></div>
 
-    <script src="assets/js/data.js"></script>
-    <script src="assets/js/i18n.js"></script>
-    <script src="assets/js/api.js"></script>
-    <script src="assets/js/referral.js"></script>
-    <script src="assets/js/share.js"></script>
-    <script src="assets/js/card-generator.js"></script>
-    <script src="assets/js/network.js"></script>
-    <script src="assets/js/charts.js"></script>
-    <script src="assets/js/timeline.js"></script>
-    <script src="assets/js/search.js"></script>
-    <script src="assets/js/evidence.js"></script>
-    <script src="assets/js/wallet.js"></script>
-    <script src="assets/js/bounty.js?v=1"></script>
-    <script src="assets/js/app.js"></script>
+    <script src="assets/js/data.js" id="crn-script-003"></script>
+    <script src="assets/js/i18n.js" id="crn-script-004"></script>
+    <script src="assets/js/api.js" id="crn-script-005"></script>
+    <script src="assets/js/referral.js" id="crn-script-006"></script>
+    <script src="assets/js/share.js" id="crn-script-007"></script>
+    <script src="assets/js/card-generator.js" id="crn-script-008"></script>
+    <script src="assets/js/network.js" id="crn-script-009"></script>
+    <script src="assets/js/charts.js" id="crn-script-010"></script>
+    <script src="assets/js/timeline.js" id="crn-script-011"></script>
+    <script src="assets/js/search.js" id="crn-script-012"></script>
+    <script src="assets/js/evidence.js" id="crn-script-013"></script>
+    <script src="assets/js/wallet.js" id="crn-script-014"></script>
+    <script src="assets/js/bounty.js?v=1" id="crn-script-015"></script>
+    <script src="assets/js/app.js" id="crn-script-016"></script>
   </body>
 </html>
